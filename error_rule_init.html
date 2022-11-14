@@ -1,0 +1,112 @@
+<pre>(fullwebapp_env) <font color="#26A269"><b>xspace@xspalenovo</b></font>:<font color="#12488B"><b>/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp</b></font>$ FLASK_APP=app.py FLASK_DEBUG=true flask run
+ * Serving Flask app &apos;app.py&apos;
+ * Debug mode: on
+<font color="#C01C28"><b>WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</b></font>
+ * Running on http://127.0.0.1:5000
+<font color="#A2734C">Press CTRL+C to quit</font>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-436-169
+127.0.0.1 - - [14/Nov/2022 09:09:36] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Nov/2022 09:09:49] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Nov/2022 09:12:50] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Nov/2022 09:17:53] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [14/Nov/2022 09:17:59] &quot;<font color="#A2734C">POST /todos/create HTTP/1.1</font>&quot; 404 -
+127.0.0.1 - - [14/Nov/2022 09:18:06] &quot;GET / HTTP/1.1&quot; 200 -
+ * Detected change in &apos;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&apos;, reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 897, in run_command
+    app = info.load_app()
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 308, in load_app
+    app = locate_app(import_name, name)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 218, in locate_app
+    __import__(module_name)
+  File &quot;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&quot;, line 21, in &lt;module&gt;
+    def create_todo():
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/app.py&quot;, line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+TypeError: Rule.__init__() got an unexpected keyword argument &apos;method&apos;
+ * Debugger is active!
+ * Debugger PIN: 140-126-143
+ * Detected change in &apos;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&apos;, reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 897, in run_command
+    app = info.load_app()
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 308, in load_app
+    app = locate_app(import_name, name)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 218, in locate_app
+    __import__(module_name)
+  File &quot;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&quot;, line 21, in &lt;module&gt;
+    def create_todo():
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/app.py&quot;, line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+TypeError: Rule.__init__() got an unexpected keyword argument &apos;method&apos;
+ * Debugger is active!
+ * Debugger PIN: 140-126-143
+ * Detected change in &apos;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&apos;, reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 897, in run_command
+    app = info.load_app()
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 308, in load_app
+    app = locate_app(import_name, name)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 218, in locate_app
+    __import__(module_name)
+  File &quot;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&quot;, line 21, in &lt;module&gt;
+    def create_todo():
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/app.py&quot;, line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+TypeError: Rule.__init__() got an unexpected keyword argument &apos;method&apos;
+ * Debugger is active!
+ * Debugger PIN: 140-126-143
+^C(fullwebapp_env) <font color="#26A269"><b>xspace@xspalenovo</b></font>:<font color="#12488B"><b>/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp</b></font>$ FLASK_APP=app.py FLASK_DEBUG=true flask run
+Traceback (most recent call last):
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/bin/flask&quot;, line 8, in &lt;module&gt;
+    sys.exit(main())
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 1047, in main
+    cli.main()
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/core.py&quot;, line 1055, in main
+    rv = self.invoke(ctx)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/core.py&quot;, line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/core.py&quot;, line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/core.py&quot;, line 760, in invoke
+    return __callback(*args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/decorators.py&quot;, line 84, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/click/core.py&quot;, line 760, in invoke
+    return __callback(*args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 911, in run_command
+    raise e from None
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 897, in run_command
+    app = info.load_app()
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 308, in load_app
+    app = locate_app(import_name, name)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/cli.py&quot;, line 218, in locate_app
+    __import__(module_name)
+  File &quot;/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp/app.py&quot;, line 21, in &lt;module&gt;
+    def create_todo():
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/scaffold.py&quot;, line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File &quot;/home/xspace/anaconda3/envs/fullwebapp_env/lib/python3.10/site-packages/flask/app.py&quot;, line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+TypeError: Rule.__init__() got an unexpected keyword argument &apos;method&apos;
+(fullwebapp_env) <font color="#26A269"><b>xspace@xspalenovo</b></font>:<font color="#12488B"><b>/media/xspace/seagate/udacity/fullstack_python/Module1/dummyapp</b></font>$ 
+</pre>
