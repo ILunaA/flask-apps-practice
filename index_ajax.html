@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Todo App</title>
+    <style>
+    .hidden {
+      display: none;
+    }
+    </style>
+
+  </head>
+  <body>
+
+    <div>
+      <h3> Input Form </h2>
+    </div>
+
+    <form id="form">
+      <input type="text" name="description" />
+      <input type="submit" value="Create" />
+    </form>
+
+    <div class = "hidden" id = "error" style="display:none;"> Something went wrong! </div>
+
+    <div>
+      <h3> To-dos in Database </h2>
+    </div>
+
+    <ul id="todos">
+      {% for d in data %}
+      <li>{{ d.description }}</li>
+      {% endfor %}
+    </ul>
+
+    <script>
+    document.getElementById('form'.onsubmit = function (e) {
+      e.preventDefault();
+      fetch('/todos/create', {
+            method: 'POST'
+            body: JSON.stringify({'description':document.getElemeent.ById('description').value
+                 }),
+             headers: {
+                      'Content-Type': 'application/json'
+                     }
+                   })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(jsonResponse) {
+          console.log(jsonResponse);
+          const liItem= document.createElement('LI');
+          liItem.innerHTML = jsonResponse['description'];
+          document.getElementById('todos').appendChild(liItem);
+          document.getElementById('error').classname='hidden';
+        });
+        .catch(function() {
+          document.getElementById('error').classname='';
+        }
+        .catch(function(err) {
+          console.log(err)
+          document.getElementById('error').className='';
+        })
+
+      }
+    </script>
+  </body>
+</html>
