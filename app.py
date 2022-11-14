@@ -17,7 +17,7 @@ class Todo(db.Model):
 with app.app_context():
    db.create_all()
 
-@app.route('/todos/create', method=['POST'])
+@app.route('/todos/create', methods=['POST'])
 def create_todo():
   description = request.form.get('description', '')
   todo = Todo(description=description)
