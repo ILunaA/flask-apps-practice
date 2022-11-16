@@ -20,6 +20,7 @@ with app.app_context():
 @app.route('/todos/create', methods=['POST'])
 def create_todo():
   description = request.get_json()['description']
+  #print(description)
   todo = Todo(description=description)
   db.session.add(todo)
   db.session.commit()
