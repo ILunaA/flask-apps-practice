@@ -11,7 +11,7 @@
   <body>
 
     <div>
-      <h3> Input Form </h2>
+      <h3> Input Form </h3>
     </div>
 
     <form id="form">
@@ -19,10 +19,10 @@
       <input type="submit" value="Create" />
     </form>
 
-    <div class = "hidden" id = "error" > Something went wrong! </div>
+    <div id = "error" class = "hidden"> Something went wrong! </div>
 
     <div>
-      <h3> To-dos in Database </h2>
+      <h3> To-dos in Database </h3>
     </div>
 
     <ul id="todos">
@@ -32,10 +32,10 @@
     </ul>
 
     <script>
-    document.getElementById('form'.onsubmit = function (e) {
+    document.getElementById('form').onsubmit = function (e) {
       e.preventDefault();
       fetch('/todos/create', {
-            method: 'POST'
+            method: 'POST',
             body: JSON.stringify({
               'description':document.getElementById('description').value
                  }),
@@ -52,8 +52,9 @@
           liItem.innerHTML = jsonResponse['description'];
           document.getElementById('todos').appendChild(liItem);
           document.getElementById('error').className='hidden';
-        });
+        })
         .catch(function() {
+          console.log()
           document.getElementById('error').className='';
         })
 
